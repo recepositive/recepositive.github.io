@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Un attimo…</title>
+
+<!-- ============================================================
+     SCHEDA N° 08
+     MODIFICA SOLO LA RIGA QUI SOTTO: incolla il link recensioni
+     del locale TRA LE VIRGOLETTE. Esempio:
+     var DESTINAZIONE = "https://g.page/r/XXXXXXXX/review";
+     Per disattivare la scheda lascia le virgolette vuote: "";
+     ============================================================ -->
+<script>var DESTINAZIONE = "";</script>
+<!-- ============================================================ -->
+
+<script>
+  if (DESTINAZIONE && /^https?:\/\//.test(DESTINAZIONE)) { window.location.replace(DESTINAZIONE); }
+</script>
+<style>
+  :root{color-scheme:dark}
+  html,body{height:100%;margin:0}
+  body{background:#121110;color:#EEE7DA;font-family:Georgia,"Times New Roman",serif;
+       display:flex;align-items:center;justify-content:center;text-align:center;padding:24px;box-sizing:border-box}
+  .stars{color:#C9A96E;letter-spacing:6px;font-size:18px;margin-bottom:18px}
+  h1{font-weight:400;font-size:26px;margin:0 0 10px}
+  p{font-family:-apple-system,"Helvetica Neue",Arial,sans-serif;font-size:14px;color:#A79C88;margin:0;line-height:1.5}
+  .n{margin-top:22px;font-family:-apple-system,"Helvetica Neue",Arial,sans-serif;font-size:11px;letter-spacing:3px;color:#6f675b}
+</style>
+</head>
+<body>
+  <main id="box">
+    <div class="stars">★★★★★</div>
+    <h1 id="t">Un attimo…</h1>
+    <p id="m">Ti stiamo portando alla pagina delle recensioni.</p>
+    <div class="n">N° 08</div>
+  </main>
+<script>
+  if (!(DESTINAZIONE && /^https?:\/\//.test(DESTINAZIONE))) {
+    document.title = "Scheda non ancora attiva";
+    document.getElementById("t").textContent = "Scheda non ancora attiva";
+    document.getElementById("m").textContent = "Questa scheda recensioni non è ancora stata collegata a un locale.";
+  }
+</script>
+</body>
+</html>
